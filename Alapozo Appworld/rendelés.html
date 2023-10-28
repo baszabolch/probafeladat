@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+  
+
+        <nav>
+         <div class="menu">
+          <a href="#"><h2>BIO LIFE</h2></a>
+        <div class="brows"> 
+          <ul>
+            <li><a href="index.html" onclick="loadContent('index.html')">Home</a></li>
+            <li><a href="rolunk.html" onclick="loadContent('rolunk.html')">Rólunk</a></li>
+            <li><a href="rendelés.html" onclick="loadContent('rendelés.html')">Rendelés</a></li>
+            <li><a href="#footer" onclick="loadContent('eléhetőségek.html')">Elérhetőségek</a></li>
+          </ul>
+         </div>
+        </div>
+        
+        </nav>
+        
+        
+        <video autoplay loop muted class="maine-video" src="video/falling cherry tomatoes cooking vegetable stew at home slow motion close up video s qaxd.mp4"></video>
+        
+        
+        
+        
+         
+              
+
+              <div class="buttons" id="rendelesGomb">
+                
+                <h2 class="rendelésh2">Itt Adhatod le a rendelésed!!!</h2>
+                  <from action="">
+
+
+
+                    <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Add meg a neved</label>
+                          <input class="form-control" type="text" id="name" placeholder="PL:Sanyi" aria-label="default input example">
+                      </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email cím</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                      </div>
+                      
+
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Add meg a Lakelyed</label>
+                        <input class="form-control" type="text" placeholder="PL:Debrecen" id="varos" aria-label="default input example">
+                        
+                        <div class="row">
+                            <div class="col">
+                              <input type="number" class="form-control" placeholder="irányítószám" id="iranyitoszam" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text"  class="form-control" placeholder="Utcanév" id="utcanev" aria-label="Last name">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" placeholder="Ház.szám" id="hazszam" aria-label="Last name">
+                              </div>
+                             
+                          </div>
+                    </div>
+
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mit rendel?</label>
+                        <textarea class="form-control" id="mitrendel" rows="3"></textarea>
+                      
+                      <select class="form-select" id="selekt" aria-label="Default select example">
+                        <option selected>Rendelt már tőlünk?</option>
+                        <option value="1">Igen</option>
+                        <option value="2">Nem</option>
+                        
+                      </select> 
+                      <button type="button" class="btn btn-success btn-lg" onclick=" alert('Köszönjük a rendelést!')">Küldés!</button>
+                    </div>
+                  </from>
+              </div>
+        
+           
+        
+        
+        
+        
+            
+          </header>
+
+
+
+          <footer>
+            <div class="col" id="footer">
+              <p>Magyarország, Budapest</p>
+              <p>Kossuth Lajos tér 1-3.</p>
+              <p>Telefon: +36 1 123 4567</p>
+              <p>Email: info@peldaoldal.hu</p>
+            </div>
+            <div class="col">
+              <p>Weboldal információ</p>
+              <p>Adatvédelem</p>
+              <p>Általános Szerződési Feltételek</p>
+              <p>Impresszum</p>
+            </div>
+            <div class="col">
+              <p>Kövess minket</p>
+              <p>Facebook</p>
+              <p>Twitter</p>
+              <p>Instagram</p>
+            </div>
+            <div class="col">
+              <p>Támogatott fizetési módok</p>
+              <p>Visa</p>
+              <p>Mastercard</p>
+              <p>PayPal</p>
+            </div>
+          </footer>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+</body>
+</html>

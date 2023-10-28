@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    color: #e5e5e5;
+    background-color: #141414;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 200px;
+}
+
+video {
+    width: 100%;
+   
+}
+
+
+nav a {
+    display: block;
+    color: #e5e5e5;
+    text-decoration: none;
+    padding: 1.25rem .5rem;
+    white-space: nowrap;
+    transition: color 0.5s;
+}
+ul li:first-child a {color:green; font-weight: bold; }
+
+nav ul li:not(:first-child) a:hover {color: red;}
+
+nav ul {display: flex;
+list-style: none;}
+
+nav {display: flex;
+    align-items: center;
+justify-content: space-between;
+position: fixed;
+z-index: 1;
+width: 100%; 
+background-image:linear-gradient(rgba(20,20,20,1),rgba(20,20,20,0));
+transition:background-color .5s
+}
+
+nav .menu {display: flex;
+align-items: center;
+margin: 0 2rem;}
+
+nav:hover {
+    background-color: #141414;
+}
+
+nav img {
+    width: 7rem;
+    height: 2.75rem;
+    margin: 0 3rem;
+}
+nav .brows {
+    display: flex;
+
+}
+
+header .buttons {
+    position: absolute;
+    top: 1rem;
+    margin: 2rem;
+    font-size: 1.7rem;
+   
+}
+header .buttons h2 {
+    top: 10rem;
+    margin: 10rem;
+}
+header {
+    position: relative;
+}
+
+
+main {
+   position: relative; 
+top: -10rem;
+margin: 2rem;
+}
+main .roww {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    margin: 2rem;
+   
+}
+main h2 {
+    margin: 0 1rem;
+
+}
+
+main .keppek {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem;
+    align-items: center;
+}
+main .keppek::-webkit-scrollbar {
+    display: none;
+}
+main .keppek img {
+    max-width: 10vw;
+    margin-right: 0.75rem;
+    border-radius: 0.3rem;
+    transition: transform .5s;
+}
+main .roww .keppek img {
+    max-width: 30vw;
+}
+main .keppek img :hover {
+    transform: scale(1.5);
+}
+
+div .felkelt{
+    position: absolute;
+}
+div .felkelt h2 {
+    text-align: center;
+}
+
+h2 .rendelásh2 {
+    top: 2rem;
+}
+
+
+
+
+
+
+footer{
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+footer .col, footer p {
+    margin: 1rem;
+}
+
+
+
+@media (max-width:900px) and (min-width:550px) {
+   nav .brows ul { display: none;}
+   nav::before {
+    content: "Browse";
+    padding: 1.25 0.5rem;
+   }
+nav .brows:hover ul {
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    width: 10rem;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+}
+
+
+
+@media (max-width:900px) {
+    main .keppek {
+        max-width: 30%;
+    }
+}
+
+
+
+@media (max-width:550px) {
+    nav {
+        flex-direction: column-reverse;
+        position: static;
+        top: 0;
+    }
+    nav img{
+        display: none;
+    }
+    nav .brows ul{
+        display: block;
+        text-align: center;  
+    }
+    nav .brows a {
+        padding: 0.5rem;
+    }
+    nav .brows {
+        padding-bottom: 1rem;
+    }
+    main {
+        margin-left: 1rem;
+        text-align: center;
+    }
+    main .roww {
+        max-width: 75vw;
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    div .felkelt h2 {
+        text-align: center;
+
+    }
+}
